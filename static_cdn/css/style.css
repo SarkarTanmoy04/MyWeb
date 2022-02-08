@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Satisfy&display=swap');
+.background_shadow:hover{
+    box-shadow: 8px 10px 120px 1px rgb(192, 154, 50);
+}
+.header{
+    font-family: Pacifico,cursive;
+    font-weight:100;
+    font-size: 40px;
+    color: aliceblue;
+}
+.frontpage_card_body{
+    font-family: 'Satisfy', cursive;
+    font-size: 20px;
+}
+.btn:hover{
+    border-color: yellow;
+    transition: ease-in 0.50s;
+    box-shadow: 5px 5px 15px 5px #000000;
+    
+}
+.img_width{
+    width: 400px;
+}
+@media only screen and (max-width: 500px) {
+    .img_fluid{
+        height: fit-content;
+        width: 30%;
+    }
+}
