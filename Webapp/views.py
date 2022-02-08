@@ -9,12 +9,7 @@ def index(request):
     return render(request,'index.html')
 
 def about(request):
-    return render(request,'about.html')
-
-def testingvar(request):
-    context={'firstname':'Tanmoy',
-    'lastname':'Sarkar'}
-    return render(request,'testingvar.html',context)
+    return render(request,'maintainance.html')
 
 def contact_us(request):
     if request.method =="POST":
@@ -31,8 +26,7 @@ def contact_us(request):
     return render(request,'contact_us.html')
 
 def Profile(request):
-    contact={'Contact':'Contact to Admin for further information'}
-    return render(request,'resume.html',contact)
+    return render(request,'resume.html')
 
 
 
