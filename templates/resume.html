@@ -1,10 +1,10 @@
-{% extends 'base.html' %}
+{% extends 'nav.html' %}
 {% block title %}Profile{% endblock title %}
 {% block body %} 
 <div class="container" style="max-width: 800px;">
-      <p class="fs-3 text-center" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Resume</p>
-      <div class="card border-light">
-        <div class="card-header fs-5 fw-bold rounded bg-secondary text-dark">
+      <p class="fs-3 text-center text-white" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Resume</p>
+      <div class="card bg-transparent text-white border border-1 border-dark">
+        <div class="card-header fs-5 fw-bold rounded">
           <img src="/static/images/profile-user.png" class="rounded" style="max-width: 25px;">&nbsp;&nbsp;<i>Profile</i>
         </div>
         <div class="card-body">
@@ -12,100 +12,116 @@
             <div class="col-md-8">
               <h4 class="card-title">Tanmoy Sarkar</h4>
               <div class="card-text">
+<<<<<<< HEAD
+                <p class="text">Email ID: - sarkartanmoyts1998@gmail.com</p>
+=======
                 <p class="text">Address: - {{Contact}} </p>
                 <p class="text">Contact: - {{Contact}}</p>
                 <p class="text">Email ID: - {{Contact}}</p>
+>>>>>>> 7576deeb38586434d2083bbaf4d4221fcde7051e
                 <p class="text">Github ID: - SarkarTanmoy04</p>
               </div>
             </div>
             <div class="col">
-              <img src="/static/images/Photo.jpg" class="rounded mx-auto d-block" style="max-width:inherit; max-height: 175px;">
+              <img src="/static/images/Main_Photo.jpg" class="rounded mx-auto d-block" style="max-width:inherit; max-height: 175px;">
+            </div>
+          </div>
+        </div>
+        <div class="card-footer d-flex justify-content-end">
+          <a class="btn btn-outline-warning" href="/contact_us" role="button">Contact Me</a>
+        </div>
+      </div>
+      <div class="pt-2">
+        <div class="card border border-1 border-dark bg-transparent text-white">
+          <div class="card-header fs-5 fw-bold rounded">
+            <img src="/static/images/mortarboard.png" class="rounded" style="max-width: 25px;">&nbsp;&nbsp;<i>Academics</i>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-striped table-hover table-sm table-secondary">
+                <thead>
+                  <tr>
+                    <th scope="col">Course</th>
+                    <th scope="col">Institution</th>
+                    <th scope="col">University</th>
+                    <th scope="col">Year of Passing</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>B.Tech in Computer Science Engineering</td>
+                    <td>Budge Budge Institute of Technology</td>
+                    <td>Maulana Abul Kalam Azad University of Technology</td>
+                    <td>Pursuing</td>
+                  </tr>
+                  <tr>
+                    <td>Diploma in Computer Science & Technology</td>
+                    <td>Budge Budge Institute of Technology</td>
+                    <td>West Bengal State Council of Technical Education</td>
+                    <td>2019</td>
+                  </tr>
+                  <tr>
+                    <td>Higher Secondary</td>
+                    <td>G.B.Memorial Institution</td>
+                    <td>West Bengal Council of Higher Secondary Education</td>
+                    <td>2016</td>
+                  </tr>
+                  <tr>
+                    <td>Madhyamik</td>
+                    <td>G.B.Memorial Institution</td>
+                    <td>West Bengal Board of Secondary Education</td>
+                    <td>2014</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
       </div>
-      <div class="card border-light">
-        <div class="card-header fs-5 fw-bold rounded bg-secondary text-dark">
-          <img src="/static/images/mortarboard.png" class="rounded" style="max-width: 25px;">&nbsp;&nbsp;<i>Academics</i>
-        </div>
-        <div class="card-body">
-          <div class="table-responsive">
-            <table class="table table-striped table-hover">
-              <thead>
-                <tr>
-                  <th scope="col">Course</th>
-                  <th scope="col">Institution</th>
-                  <th scope="col">University</th>
-                  <th scope="col">Year of Passing</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>B.Tech in Computer Science Engineering</td>
-                  <td>Budge Budge Institute of Technology</td>
-                  <td>Maulana Abul Kalam Azad University of Technology</td>
-                  <td>Pursuing</td>
-                </tr>
-                <tr>
-                  <td>Diploma in Computer Science & Technology</td>
-                  <td>Budge Budge Institute of Technology</td>
-                  <td>West Bengal State Council of Technical Education</td>
-                  <td>2019</td>
-                </tr>
-                <tr>
-                  <td>Higher Secondary</td>
-                  <td>G.B.Memorial Institution</td>
-                  <td>West Bengal Council of Higher Secondary Education</td>
-                  <td>2016</td>
-                </tr>
-                <tr>
-                  <td>Madhyamik</td>
-                  <td>G.B.Memorial Institution</td>
-                  <td>West Bengal Board of Secondary Education</td>
-                  <td>2014</td>
-                </tr>
-              </tbody>
-            </table>
+      <div class="pt-2">
+        <div class="card bg-transparent text-white border border-1 border-dark">
+          <div class="card-header fs-5 fw-bold rounded">
+            <img src="/static/images/skill.png" class="rounded" style="max-width: 25px;">&nbsp;&nbsp;<i>Skill Sets</i>
+          </div>
+          <div class="card-body">
+            <ul class="list-group list-group-flush rounded rounded-1">
+              <li class="list-group-item list-group-item-action list-group-item-dark">Completed Ethical Hacking Traning from Internshala Training</li>
+              <li class="list-group-item list-group-item-action list-group-item-dark ">Completed Python Programming & Software Design For Absolute Beginners from Udemy</li>
+              <li class="list-group-item list-group-item-action list-group-item-dark ">Completed Soft Skills from NPTEL Online Course</li>
+              <li class="list-group-item list-group-item-action list-group-item-dark ">Completed Advance Diploma in Computer Hardware & Network from All Indian Council of
+                Computer Education </li>
+              <li class="list-group-item list-group-item-action list-group-item-dark">Completed Diploma in Computer Application from Ramakrishna Education & Technological
+                Institute</li>
+            </ul>
           </div>
         </div>
-      </div>
-      <div class="card border-light">
-        <div class="card-header fs-5 fw-bold rounded bg-secondary text-dark">
-          <img src="/static/images/skill.png" class="rounded" style="max-width: 25px;">&nbsp;&nbsp;<i>Skill Sets</i>
+    </div>
+      <div class="pt-2">
+        <div class="card bg-transparent text-white border border-1 border-dark">
+          <div class="card-header fs-5 fw-bold rounded">
+            <img src="/static/images/knowledge.png" class="rounded" style="max-width: 25px;">&nbsp;&nbsp;<i>Domain Knowledge</i>
+          </div>
+          <div class="card-body">
+            <ul class="list-group list-group-horizontal-sm text-center text-white">
+              <li class="list-group-item flex-fill bg-transparent text-white border-dark">C Programming</li>
+              <li class="list-group-item flex-fill bg-transparent text-white border-dark">C++</li>
+              <li class="list-group-item flex-fill bg-transparent text-white border-dark">Java</li>
+              <li class="list-group-item flex-fill bg-transparent text-white border-dark">Python</li>
+              <li class="list-group-item flex-fill bg-transparent text-white border-dark">HTML</li>
+              <li class="list-group-item flex-fill bg-transparent text-white border-dark">CSS</li>
+            </ul>
+            <ul class="list-group list-group-horizontal-sm text-center">
+              <li class="list-group-item flex-fill bg-transparent text-white border-dark">Bootstrap</li>
+              <li class="list-group-item flex-fill bg-transparent text-white border-dark">Hardware & Network</li>
+              <li class="list-group-item flex-fill bg-transparent text-white border-dark">Basic Software Testing</li>
+            </ul>
+          </div>
+          
         </div>
-        <div class="card-body">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item text">Completed Ethical Hacking Traning from Internshala Training</li>
-            <li class="list-group-item text">Completed Python Programming & Software Design For Absolute Beginners from Udemy</li>
-            <li class="list-group-item text">Completed Soft Skills from NPTEL Online Course with 60% marks</li>
-            <li class="list-group-item text">Completed Advance Diploma in Computer Hardware & Network from All Indian Council of
-              Computer Education with 76.44 % marks</li>
-            <li class="list-group-item text">Completed Diploma in Computer Application from Ramakrishna Education & Technological
-              Institute with Grade: A</li>
-          </ul>
-        </div>
-      </div>
-      <div class="card border-light">
-        <div class="card-header fs-5 fw-bold rounded bg-secondary text-dark">
-          <img src="/static/images/knowledge.png" class="rounded" style="max-width: 25px;">&nbsp;&nbsp;<i>Domain Knowledge</i>
-        </div>
-        <div class="card-body">
-          <ul class="list-group list-group-horizontal-sm text-center">
-            <li class="list-group-item flex-fill">C Programming</li>
-            <li class="list-group-item flex-fill">C++</li>
-            <li class="list-group-item flex-fill">Java</li>
-            <li class="list-group-item flex-fill">Python</li>
-            <li class="list-group-item flex-fill">HTML</li>
-            <li class="list-group-item flex-fill">CSS</li>
-          </ul>
-          <ul class="list-group list-group-horizontal-sm text-center">
-            <li class="list-group-item flex-fill">Bootstrap</li>
-            <li class="list-group-item flex-fill">Hardware & Network</li>
-            <li class="list-group-item flex-fill">Basic Software Testing</li>
-          </ul>
-        </div>
-        
-      </div>
+    </div>
+    <div class="d-flex justify-content-end my-3">
+      <a class="btn btn-outline-info" href="/contact_us" role="button">Ask me for Resume</a>
+    </div>
 </div>
 {% endblock body %}
     

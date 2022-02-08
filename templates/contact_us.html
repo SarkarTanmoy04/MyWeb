@@ -1,5 +1,5 @@
-{% extends 'base.html' %}
-{% block title %}Contact Us{% endblock title %}
+{% extends 'nav.html' %}
+{% block title %}Contact{% endblock title %}
 {% block body %}
 {% for message in messages %}
     <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
@@ -7,37 +7,40 @@
       <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
     {% endfor %} 
-<div class="container pt-5">
+<div class="container pt-3 d-flex justify-content-center">
   <form method="post" action="/contact_us">
     {% csrf_token %}
-    <div class="card border-success">
-      <h5 class="card-header text-center bg-transparent border-success">
-        Contact Us
-      </h5>
-      <div class="card-body bg-transparent border-success">
+    <div class="card bg-transparent border border-dark border-1 shadow-lg">
+      <h3 class="card-header text-center border border-0 text-white">
+        Get in touch
+      </h3>
+      <div class="card-body text-secondary" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-size: large;">
         <div class="mb-3">
           <div class="row">
             <div class="col">
-              <label for="First_Name" class="form-label fw-bold">First Name</label>
-              <input type="text" class="form-control" id="First_Name" name="First_Name" placeholder="First Name">
+              <label for="First_Name" class="form-label">First Name</label>
+              <input type="text" class="form-control p-2" id="First_Name" name="First_Name" placeholder="First Name" maxlength="20">
             </div>
             <div class="col">
-              <label for="Last_Name" class="form-label fw-bold">Last Name</label>
-              <input type="text" class="form-control" id="Last_Name" name="Last_Name" placeholder="Last Name">
+              <label for="Last_Name" class="form-label">Last Name</label>
+              <input type="text" class="form-control p-2" id="Last_Name" name="Last_Name" placeholder="Last Name" maxlength="20">
             </div>
           </div>
         </div>
+        <hr class="bg-light">
         <div class="mb-3">
-          <label for="Email" class="form-label fw-bold">Email address</label>
+          <label for="Email" class="form-label">Email address</label>
           <input type="email" class="form-control" id="Email" name="Email"  placeholder="name@example.com">
         </div>
+        <hr class="bg-light">
         <div class="mb-3">
-          <label for="Description" class="form-label fw-bold">Description</label>
+          <label for="Description" class="form-label">Description</label>
           <textarea class="form-control" id="Description" name="Desc" rows="4"></textarea>
-        </div>  
+        </div>
+        <hr class="bg-light">  
       </div>
-      <div class="card-footer bg-transparent border-success d-flex justify-content-end">
-        <button class="btn btn-primary" type="submit">Submit</button>
+      <div class="card-footer d-flex justify-content-end border border-0">
+        <button class="btn btn-outline-success btn-lg" type="submit">Submit</button>
       </div>
     </div>
   </form>

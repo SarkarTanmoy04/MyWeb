@@ -1,18 +1,26 @@
-{% extends 'base.html' %}
+{% extends 'nav.html' %}
 {% block title %}Home{% endblock title %}
 {% block body %}
-<div class="container-fluid pt-2">
-    <div class="row">
-      <div class="col-sm-6">
-        <div class="d-flex justify-content-center">
-          <img src="/static/images/Photo.jpg" class="rounded">
+<div class="container pt-5">
+  <div class="row">
+    <div class="col-md-6 d-flex justify-content-center">
+      <img src="\static\images\Main_Photo.jpg" class="img-fluid rounded-3 background_shadow img_width" alt="Tanmoy Sarkar">
+    </div>
+    <div class="col-md-6">
+      <div class="pt-5">
+        <div class="card bg-transparent text-center background_shadow border border-dark border-1 ">
+            <div class="card-header header">Tanmoy Sarkar</div>
+            <div class="card-body">
+              <p class="card-text text-light frontpage_card_body">Hi, I am Tanmoy Sarkar,a fresher enginnering student,pursing B.Tech on computer science engineering ,having core interest in the field of Software Development, and its the field i want to grow up for future, also motivated in the field of Software testing.I have done some small and medium projects during my educational session and also have done some college group projects. </p>
+            </div>
         </div>
+      </div>  
+      <div class="pt-5 d-flex justify-content-between">
+        <a class="btn btn-lg text-warning text-center disabled" href="/about" role="button">About</a>
+        <a class="btn btn-lg text-warning text-center" href="/contact_us" role="button">Contact</a>
+        <a class="btn btn-lg text-warning text-center" href="/profile" role="button">Profile</a>
       </div>
-      <div class="col-sm-6 pt-3">
-        <figure class="text-center">
-          Hi, I am Tanmoy Sarkar here,a fresher engineering student.Completed <strong>Computer Science Engineering</strong> from <strong><i>Budge Budge Institute of Technology</i></strong> under <strong>MAKAUT</strong>
-        </figure>
-      </div>
-    </div>  
+    </div>
   </div>
+
 {% endblock body %}
